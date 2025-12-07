@@ -13,13 +13,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavHostController
 import com.example.appstresswatch.R
+import com.example.appstresswatch.navigation.Screens
 import com.example.appstresswatch.ui.theme.StressDarkBlue
 
 @Composable
 
 
-fun LogoScreen (){
+fun LogoScreen (navController: NavHostController){
     Surface(
         modifier = Modifier.fillMaxSize(),
     ) {
@@ -35,7 +37,7 @@ fun LogoScreen (){
                 contentScale = ContentScale.Fit,
                 modifier = Modifier
                     .size(280.dp)
-                    //.clickable { navController.navigate(Screen.LoginScreen.name) }
+                    .clickable { navController.navigate(Screens.LoginScreen.name) }
 
             )
         }
