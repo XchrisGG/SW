@@ -9,14 +9,34 @@ import com.example.appstresswatch.layouts.LogoScreen
 
 @Composable
 
-fun NavGraph(){
+fun NavGraph() {
     val navController = rememberNavController()
 
-    NavHost(navController, startDestination = Screens.LogoScreen.name){
-        composable(route = Screens.LogoScreen.name){ LogoScreen(navController) }
-        composable(route = Screens.LoginScreen.name){ LoginScreen(navController) }
+    NavHost(
+        navController = navController,
+        startDestination = Screens.LogoScreen.name
+    ) {
 
+        composable(Screens.LogoScreen.name) {
+            LogoScreen(navController) // Esta sí recibe navController, está bien
+        }
+
+        composable(Screens.LoginScreen.name) {
+
+            // AQUÍ USAS NAVCONTROLLER (sí se conserva)
+            LoginScreen(
+                onLoginClick = {
+                    navController.navigate(Screens.LogoScreen.name)
+                },
+                onRegisterClick = {
+                    navController.navigate(Screens.LogoScreen.name)
+                },
+
+
+                onRecoverPasswordClick = {
+                    navController.navigate(Screens.LogoScreen.name)
+                }
+            )
+        }
     }
-
-
 }
