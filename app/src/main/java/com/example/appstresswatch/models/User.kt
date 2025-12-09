@@ -1,11 +1,8 @@
 package com.example.appstresswatch.models
 
-import kotlinx.serialization.Serializable
 
 
-@Serializable
-
-data class User(
+/*data class User(
     val id: String? = null,
     val nombre: String = "",
     val apellido: String = "",
@@ -17,4 +14,4 @@ data class User(
 
 
 
-)
+)*/

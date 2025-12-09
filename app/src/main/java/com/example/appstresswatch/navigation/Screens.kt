@@ -16,4 +16,12 @@ sealed class Screens(val name: String) {
 
     object PreViewInfo : Screens("Pre")
 
+    object LoginScreen2 : Screens("lo2")
+
+    object HomeScreen : Screens("home")
+
+    object ChatScreen: Screens("chat")
+
+    object ProfileScreens: Screens("Prefile")
+
 }

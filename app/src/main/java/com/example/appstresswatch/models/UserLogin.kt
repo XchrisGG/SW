@@ -1,10 +1,9 @@
 package com.example.appstresswatch.models
 
-import kotlinx.serialization.Serializable
 
-
-@Serializable
-data class UserLogin(
-    val correo: String,
-    val password: String
+data class User(
+    val id: String,
+    val nombre: String,
+    val apellido: String,
+    val usuario: String
 )
