@@ -7,10 +7,10 @@
       </SelectionState>
       <SelectionState runConfigName="appwearos">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2025-12-07T01:33:28.091538600Z">
+        <DropdownSelection timestamp="2025-12-09T08:25:39.372871600Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="Default" identifier="serial=192.168.1.5:33123;connection=4d733197" />
+              <DeviceId pluginId="Default" identifier="serial=192.168.1.5:33123;connection=ca91833f" />
             </handle>
           </Target>
         </DropdownSelection>

@@ -21,6 +21,17 @@ horologistComposeTools = "0.6.17"
 horologistTiles = "0.6.17"
 watchfaceComplicationsDataSourceKtx = "1.2.1"
 
+retrofit = "2.9.0"
+gsonConverter = "2.9.0"
+
+material3DatePicker = "1.2.1"
+materialIconsExtended = "1.4.3"
+
+kotlinxSerialization = "1.7.3"       # o la versión que prefieras (1.7.3 es estable)
+coroutines = "1.7.3"
+
+
+
 navigationCompose = "2.9.6"
 
 [libraries]
@@ -51,6 +62,20 @@ horologist-compose-tools = { group = "com.google.android.horologist", name = "ho
 horologist-tiles = { group = "com.google.android.horologist", name = "horologist-tiles", version.ref = "horologistTiles" }
 androidx-watchface-complications-data-source-ktx = { group = "androidx.wear.watchface", name = "watchface-complications-data-source-ktx", version.ref = "watchfaceComplicationsDataSourceKtx" }
 androidx-navigation-compose= {group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose"}
+
+androidx-compose-material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended", version.ref = "materialIconsExtended" }
+
+
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "gsonConverter" }
+
+androidx-compose-material3-datepicker = { group = "androidx.compose.material3", name = "material3", version.ref = "material3DatePicker" }
+
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerialization" }
+
+coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
+coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
+
 
 
 [plugins]

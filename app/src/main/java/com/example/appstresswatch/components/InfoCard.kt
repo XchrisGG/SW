@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import com.example.appstresswatch.ui.theme.StressMint
 
 @Composable
 fun InfoCard(
@@ -21,7 +22,7 @@ fun InfoCard(
         modifier = modifier
             .fillMaxWidth()
             .background(
-                color = MaterialTheme.colorScheme.primary,
+                color = StressMint,
                 shape = RoundedCornerShape(25.dp)
             )
             .padding(horizontal = 20.dp, vertical = 18.dp)

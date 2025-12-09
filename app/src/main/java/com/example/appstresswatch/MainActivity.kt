@@ -6,6 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 
 import com.example.appstresswatch.navigation.NavGraph
+import com.example.appstresswatch.ui.theme.StressWatchTheme
 
 
 class MainActivity : ComponentActivity() {
@@ -14,6 +15,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             NavGraph()
+
 
         }
     }
